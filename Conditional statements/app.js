@@ -1,4 +1,11 @@
-let a = 18;
-if (a >=18) {
-    console.log("you are eligible to vote");
+let color = "green"
+if (color === "red") {
+    console.log(" Don't go, the light is red");
+};
+if(color === "green"){
+    console.log(" go , the light is green");
+
+}
+if (color === "yellow"){
+    console.log(" start your vehicle");
 }
