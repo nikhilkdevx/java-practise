@@ -1,15 +1,27 @@
-let color = "green";
-switch (color) 
+let day = "1";
+switch (day) 
 {
-        case "red":
-        console.log ("ruk ja Bc");
+        case "1":
+        console.log ("aaj monday hai");
         break;
-        case "yellow":
-        console.log ("e gaadi start kr");
+        case "2":
+        console.log ("aaj tuesday hai");
         break;
-        case "green":
-        console.log ("chal ja Bc");
+        case "3":
+        console.log ("aaj wednesday hai");
+        break;
+        case "4":
+        console.log ("aaj thursday hai");
+        break;
+        case "5":
+        console.log ("aaj friday hai");
+        break;
+        case "6":
+        console.log ("aaj saturday hai");
+        break;
+        case "7":
+        console.log ("aaj sunday hai");
         break;
         default:
-        console.log ("signal kharab hai");
+        console.log ("aaj koi din nahi hai");
 }
