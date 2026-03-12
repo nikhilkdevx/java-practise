@@ -1,7 +1,8 @@
-let Size = "6";
-let letter = "b";
-if (Size > "3" && letter >= "a") {
-    console.log(" it is a good string");}
-    else if ( Size < "3" && letter >= "a") {
-        console.log(" it is not a good string");
-    }
+let Str = "apple";
+
+if ( Str.length > 3 && Str[0] === "a"){
+    console.log(" It is a good string");
+}
+else{
+    console.log(" It is not a good string");
+}
