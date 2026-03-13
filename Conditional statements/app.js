@@ -1,12 +1,8 @@
-let a = Number(prompt ("Enter the first number"));
-let b = Number(prompt ("Enter the second number"));
-let c = Number(prompt ("Enter the third number"));
-if ( a>b && a>c) {
-console.log("a is the greatest number");
-}
-else if ( b>a && b>c) {
-console.log("b is the greatest number");
-}
-else {
-console.log ("c is the greatest number");
+let a = 13;
+let b = 1234562;
+
+if (a % 10 == b % 10){
+        console.log("last digit of a and b are same");
+} else{
+        console.log("last digit of a and b are different");
 }
