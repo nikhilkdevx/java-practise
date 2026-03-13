@@ -1,7 +1,3 @@
-let num = 35;
-if (num % 10 === 0) {
-console.log("good");
-}
-else {
-console.log("bad");
-}
+let firstName = prompt("What is your first name?");
+let age = prompt("What is your age?");
+alert(firstName + " is " + age + " years old");
