@@ -1,5 +1,11 @@
-let msg = "      help!     "
-let Newmsg = msg.trim().toUpperCase();
-console.log(Newmsg);
-
- 
+let msg = "ApnaCollege";
+let Newname = (msg.slice(4,9));
+console.log(Newname);
+let a = (msg.indexOf("na"));
+console.log(a);
+let b = (msg.replace("Apna","Our"));
+console.log(b);
+let c = (msg.slice(4).replace("l","t"));
+console.log(c);
+let d = (c.replace("l","t"));
+console.log(d);
