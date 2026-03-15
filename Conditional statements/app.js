@@ -1,4 +1,5 @@
-let msg ="Nikhil will Achieve Freedom"
-let Newmsg = msg.repeat(3);
+let msg = "      help!     "
+let Newmsg = msg.trim().toUpperCase();
 console.log(Newmsg);
+
  
