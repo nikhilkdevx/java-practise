@@ -1,8 +1,6 @@
 let months = ["january","july","march","august"];
-let a = months.indexOf("march");
-console.log(a);
-let b = months.includes("august");
+let b = months.splice(0,1);
 console.log(b);
-let c =["1","2","3","4"];
-let d =months.concat(c);
-console.log(d);
+console.log(months);
+let c = months.splice(1,0,"june");
+console.log(months);
