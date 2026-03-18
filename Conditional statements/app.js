@@ -1,7 +1,3 @@
-let str= prompt("enter the character");
-let indx = 4;
-if (str[indx] == str[indx].toLowerCase() ) {
-    console.log("yes it is lower case");
-} else {
-    console.log ("no it is upper case");
-} 
+let str = prompt("enter details");
+let a = str.trim();
+console.log(a);
