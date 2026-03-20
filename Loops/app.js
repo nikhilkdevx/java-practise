@@ -9,6 +9,8 @@
 // for (let i = 10 ; i >= 2 ; i = i-2){
 //     console.log(i);
 // }
-for (let i = 5; i <= 100; i = i+5){
+let n = prompt("enter your number");
+n = parseInt(n);
+for( let i = n ; i <= n*10; i=i+n){
     console.log(i);
 }
