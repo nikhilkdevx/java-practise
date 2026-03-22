@@ -1,10 +1,5 @@
-let i = 0;
-while (i <= 20){
-    if (i==10){
-        console.log(i);
-        break;
-
-    }
-    console.log(i);
-    i = i+2;
+let names = ["Nik","reyansh","uttu","aayu","palak","ridihima","subham"];
+names.push("kaukshik");
+for(i=names.length-1; i>=0; i--){
+console.log(i,names[i]);
 }
