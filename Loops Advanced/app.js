@@ -1,5 +1,12 @@
-let names = ["Nik","reyansh","uttu","aayu","palak","ridihima","subham"];
-names.push("kaukshik");
-for(i=names.length-1; i>=0; i--){
-console.log(i,names[i]);
+let fruits =[
+    ["banana","mango","litchi"] , 
+    ["guava","grapes","papaya"]
+]
+for (let i=0;i<fruits.length;i++){
+    console.log(i,fruits[i]);
+
+for(let j=0;j<fruits[i].length;j++){
+    console.log(`j=${j},${fruits[i][j]}`);
 }
+}
+
