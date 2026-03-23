@@ -1,12 +1,11 @@
-let fruits =[
-    ["banana","mango","litchi"] , 
-    ["guava","grapes","papaya"]
-]
-for (let i=0;i<fruits.length;i++){
-    console.log(i,fruits[i]);
+let student = [["Nik",20,],["Mohan",90],["Raj",45]]
+ for(i=0;i<student.length;i++){
+    console.log(i,student[i]);
+for(j=0;j<student[i].length;j++){
+    console.log("Marks of Follwoing Students")
+    console.log(`j=${j}, ${student[i][j]}`)
+}
+ }   
+    
 
-for(let j=0;j<fruits[i].length;j++){
-    console.log(`j=${j},${fruits[i][j]}`);
-}
-}
 
