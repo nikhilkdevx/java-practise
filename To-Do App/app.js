@@ -25,8 +25,6 @@ while( true){
     } else{
         console.log("wrong request");
     }
-    
-        
-    
+         
      req = prompt("enter your request");
 }    
