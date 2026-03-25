@@ -1,29 +1,32 @@
-let todo =[];
-let a = prompt("Enter above refernces to do the tasks");
+let todo=[];
 
-while (true){
-    
-    if(a=="quit"){
-        console.log("You Quit the App");
+let req = prompt("enter your request");
+while( true){
+    if (req=="quit"){
+        alert("You Quit");
         break;
     }
+    if(req=="list"){
+        console.log("-----------");
+        for(i=0;i<todo.length;i++)
+        console.log(i,todo[i]);
+        console.log("-----------");
 
-
-    if (a=="list"){
-    console.log("--------------");
-    for(task of todo){
-        console.log(task);
+    } else if(req=="add"){
+       let a= prompt("what you want to add");
+        console.log(todo.push(a));
+        console.log("task added");
     }
-    console.log("--------------");
-}   else if(a=="add"){
-    let task= prompt("enter the activity you want to add");
-    todo.push(task);
-    console.log("task added");
+      else if (req=="delete"){
+       let idx =  prompt("enter that index no you want to delete");
+     
+       todo.splice(idx,1);
+       alert("task deleted");
+    } else{
+        console.log("wrong request");
     }
-    a = prompt("Enter above refernces to do the tasks"); 
-}   
     
-   
-
-
+        
     
+     req = prompt("enter your request");
+}    
