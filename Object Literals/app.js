@@ -1,16 +1,3 @@
-const classInfo = [
-    {   aman:"20",
-        class:"12",
-        city:"rohtas"
-    },
-    {
-        Nik:"10",
-        class:"12",
-        city:"rohtas"
-    },
-    {
-        karktik:"15",
-        class:"12",
-        city:"rohtas"
-    }
-];  
+//  Generate any random number from 1 to 20
+let num = Math.floor(Math.random()*20)+1;
+console.log(num);
