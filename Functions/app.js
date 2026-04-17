@@ -55,11 +55,24 @@
 //     }
 // }
 // console.log(resultstr);
-let country =["Hi", "No", "Yes"];
-let largestcountry ="";
-for (let i=0;i<country.length;i++){
-    if(country[i].length>largestcountry.length){
-        largestcountry = country[i] ;
+// let country =["Hi", "No", "Yes"];
+// let largestcountry ="";
+// for (let i=0;i<country.length;i++){
+//     if(country[i].length>largestcountry.length){
+//         largestcountry = country[i] ;
+//     }
+// }
+// console.log(largestcountry);
+let student = {
+    name : "Nik",
+    class : 14,
+    eng : 30,
+    math : 96,
+    phy : 97 ,
+    getAvg(){
+        console.log(this);
+        let avg = (this.eng + this.math + this.phy) / 3;
+        console.log(`${this.name} got avg marks = ${avg}`);
     }
 }
-console.log(largestcountry);
+student.getAvg();
