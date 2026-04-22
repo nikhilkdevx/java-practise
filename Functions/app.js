@@ -63,16 +63,43 @@
 //     }
 // }
 // console.log(largestcountry);
-let student = {
-    name : "Nik",
-    class : 14,
-    eng : 30,
-    math : 96,
-    phy : 97 ,
-    getAvg(){
-        console.log(this);
-        let avg = (this.eng + this.math + this.phy) / 3;
-        console.log(`${this.name} got avg marks = ${avg}`);
-    }
+// let student = {
+//     name : "Nik",
+//     class : 14,
+//     eng : 30,
+//     math : 96,
+//     phy : 97 ,
+//     getAvg(){
+//         console.log(this);
+//         let avg = (this.eng + this.math + this.phy) / 3;
+//         console.log(`${this.name} got avg marks = ${avg}`);
+//     }
+// }
+// student.getAvg();
+ 
+// let str = "Apple";
+// function CountVowel(str){
+//     let count = 0;
+//     for(let i=0;i<str.length;i++)
+//     if(str.charAt(i)=="a"||
+//     str.charAt(i)=="o"||
+//     str.charAt(i)=="e"||
+//     str.charAt(i)=="i"||
+//     str.charAt(i)=="u"||
+//     str.charAt(i)=="A"||
+//     str.charAt(i)=="O"||
+//     str.charAt(i)=="E"||
+//     str.charAt(i)=="I"||
+//     str.charAt(i)=="U"
+// ){
+//     count++;
+// }
+// return count;
+// }
+
+let start = 100;
+let end = 200;
+function generateRandom (start,end){
+    let diff = end - start;
+    return Math.floor(Math.random()*diff)+start;
 }
-student.getAvg();
