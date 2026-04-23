@@ -86,12 +86,73 @@
 // );
 // console.log(result);
 
-let num =[1,3,4,5,6,7,9];
-let max= num.reduce((max,el)=>{
-    if(el>max){
-        return el;
-    }else{
-        return max;
-    }
-});
-console.log(max);
+// let num =[1,3,4,5,6,7,9];
+// let max= num.reduce((max,el)=>{
+//     if(el>max){
+//         return el;
+//     }else{
+//         return max;
+//     }
+// });
+// console.log(max);
+
+// let mul=num.every((el)=>{return el%10 ==0});
+// console.log(mul);
+// function getmin(num){
+// let min = num.reduce((res,el)=>{
+//     if (el<res){
+//         return el;
+//     }else{return res;}
+// });
+// return res;
+// }
+// function sum(a,b=4){
+//     return a+b;
+// }
+// let arr=[1,2,3,4,5,6];
+// let square = arr.map(el=>{
+//     return el*el;
+// });
+// let sum = square.reduce((res,el)=>{
+//     return (res+el);
+// });
+// let average = sum/arr.length;
+// console.log(square);
+// console.log(sum);
+// console.log(average);
+
+// let arr =[2,4,6,7];
+// let NewArr= arr.map((el)=>{
+//     return el+5;
+// });
+// console.log(NewArr);
+
+// let arr=["a","b","c"];
+// let NewArr=arr.map(el=>{
+//     return el.toUpperCase()
+// });
+// console.log(NewArr);
+// let arr =[1,2,3];
+// let arg =[4,5];
+// let double=arg.map((el=>{
+//     return 2*el;
+// }));
+// let NewArr=(...arr,...double);
+// function doubleAndReturnArgs(arr,...args){
+//     let double = args.map(el=> el*2);
+//     return [...arr,...double];
+// }
+// let result = doubleAndReturnArgs([1,2,3],4,5);
+// console.log(result);
+let obj1={
+    Name:"Nik",
+    Marks:20
+};
+let obj2 ={
+    Place:"bihar",
+    contact:23
+};
+
+function mergeObjects(obj1,obj2){
+    return {...obj1,...obj2};
+}
