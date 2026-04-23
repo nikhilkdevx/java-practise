@@ -68,8 +68,30 @@
 // })
 // console.log(triple);
 
-let num = [1,2,3,4,5,6,7,8, 9,10];
-let even = num.filter((el)=>{
-    return (el %2 !=0);
-})
-console.log(even);
+// let num = [1,2,3,4,5,6,7,8, 9,10];
+// let even = num.filter((el)=>{
+//     return (el %2 !=0);
+// })
+// console.log(even);
+// let num = [7,3,5,2];
+// let even = num.every((el)=>{
+//     return (el%2 !=0);
+// })
+// console.log(even);
+// let num =[2,3,4,5,12];
+// let result = num.reduce((res,el)=>{
+//     console.log(res);
+
+//     return res+el}
+// );
+// console.log(result);
+
+let num =[1,3,4,5,6,7,9];
+let max= num.reduce((max,el)=>{
+    if(el>max){
+        return el;
+    }else{
+        return max;
+    }
+});
+console.log(max);
