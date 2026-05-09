@@ -144,15 +144,15 @@
 // }
 // let result = doubleAndReturnArgs([1,2,3],4,5);
 // console.log(result);
-let obj1={
-    Name:"Nik",
-    Marks:20
-};
-let obj2 ={
-    Place:"bihar",
-    contact:23
-};
+// let obj1={
+//     Name:"Nik",
+//     Marks:20
+// };
+// let obj2 ={
+//     Place:"bihar",
+//     contact:23
+// };
 
-function mergeObjects(obj1,obj2){
-    return {...obj1,...obj2};
-}
+// function mergeObjects(obj1,obj2){
+//     return {...obj1,...obj2};
+// }
