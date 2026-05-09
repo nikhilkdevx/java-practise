@@ -1,15 +1,4 @@
-let h1=document.querySelector("h1");
 
-// setTimeout(function(){
-//     h1.style.color = "blue";
-// },1000);
-
-// setTimeout(function(){
-//     h1.style.color = "orange";
-// },2000);
-// setTimeout(function(){
-// h1.style.color = "pink";
-// },3000)
 
 //  
 
@@ -38,36 +27,71 @@ let h1=document.querySelector("h1");
 //     console.log("failure! Data was not saved");
 // });
 
-function saveToDb(data){
-    return new Promise((resolve,reject) => {
-        let timeInterval = Math.floor(Math.random()*10 + 1);
-        if(timeInterval > 4){
-            resolve("success ! Data was Saved ");
-        } else {
-            reject("Failure ! Data was not Saved");
-        }
+// function saveToDb(data){
+//     return new Promise((resolve,reject) => {
+//         let timeInterval = Math.floor(Math.random()*10 + 1);
+//         if(timeInterval > 4){
+//             resolve("success ! Data was Saved ");
+//         } else {
+//             reject("Failure ! Data was not Saved");
+//         }
     
-    });
+//     });
+// }
+
+// saveToDb("abc")
+//     .then((result)=>{
+//     console.log("promise solved");
+//     console.log(result);
+//     return saveToDb("xyz")
+    
+//         .then((result)=>{
+//         console.log("data 2 was saved");
+//         console.log(result);
+//             return saveToDb("Nik")
+//             .then((result)=>{
+//             console.log("data 3 saved");
+//             console.log(result);
+//             });
+//     });
+//         })
+//     .catch((error)=>{
+//     console.log("promise rejected");
+//     console.log(error);
+// });
+
+let h1=document.querySelector("h1");
+// setTimeout(function(){
+//     h1.style.color = "blue";
+// },1000);
+
+// setTimeout(function(){
+//     h1.style.color = "orange";
+// },2000);
+// setTimeout(function(){
+// h1.style.color = "pink";
+// },3000)
+function ColorChange(color,delay){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            h1.style.color = color;
+            resolve("color changed!");
+        },delay);
+    }); 
 }
-
-saveToDb("abc")
-    .then((result)=>{
-    console.log("promise solved");
-    console.log(result);
-    return saveToDb("xyz")
-    
-        .then((result)=>{
-        console.log("data 2 was saved");
-        console.log(result);
-            return saveToDb("Nik")
-            .then((result)=>{
-            console.log("data 3 saved");
-            console.log(result);
-            });
-    });
+ColorChange("red",1000)
+.then(()=>{
+    ColorChange("pink",1000)
+    .then(()=>{
+        ColorChange("orange",1000)
+        .then(()=>{
+            ColorChange("blue",1000)
+            .then(()=>{
+                ColorChange("yellow",1000)
+            })
         })
-    .catch((error)=>{
-    console.log("promise rejected");
-    console.log(error);
+    })
+})
+.catch(()=>{
+    console.log("sorry! no color changed");
 });
-
